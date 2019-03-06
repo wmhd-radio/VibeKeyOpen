@@ -954,6 +954,8 @@ body p {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="overlay"] {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
     opacity: 1;
     -webkit-opacity: 1;
     -moz-opacity: 1;
