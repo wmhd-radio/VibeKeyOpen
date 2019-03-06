@@ -859,6 +859,7 @@ body p {
 /* about */
 .about {
   padding: 80px 0px 100px;
+  align-self: center;
 }
 .about .personnel .title,
 .about .discography .title {
@@ -949,6 +950,16 @@ body p {
   -webkit-opacity: 1;
   -moz-opacity: 1;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="overlay"] {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+
 .about .personnel .personnel-list .shape .overlay .name {
   position: relative;
   display: table-cell;
