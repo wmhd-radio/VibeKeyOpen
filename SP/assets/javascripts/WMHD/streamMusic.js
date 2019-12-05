@@ -14,16 +14,16 @@ function streamMusic() {
 }  
 
 function updateNowPlaying() {
-  console.log("NowPlaying Updated");
+  //console.log("NowPlaying Updated");
   $.get("https://dj.wmhdradio.org/api/live-info/", function(data) {
     document.getElementById("song-title").innerHTML = data.current.name;
     var timeTilNext = Date.parse(data.next.starts) - (new Date()) - 18000000;
     setTimeout(updateNowPlaying, timeTilNext);
   })
   .done(function() {
-      console.log("request made");
+      //console.log("request made");
   })
   .fail(function() {
-      console.log("request failed");
+      //console.log("request failed");
   });
 }
